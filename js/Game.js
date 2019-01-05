@@ -12,9 +12,7 @@ const Game = class {
       `Bond James Bond`,
       `Viva Las Vegas`,
       `You Had Me At Hello`,
-      `Another Brick In The Wall`,
       `Bad Moon Rising`,
-      `Everybody Cut Footloose`,
       `Murder She Wrote`
     ];
     this.activePhrase = null;
