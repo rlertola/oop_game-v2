@@ -62,7 +62,13 @@ button {
 
 #btn__reset {
 	width: 200px;
-	margin: 0 auto;
+  margin: 0 auto;
+  opacity: 0.6;
+}
+
+#btn__reset:hover {
+opacity: 1;
+transform: scale(1.15);
 }
 
 .main-container {
@@ -107,8 +113,6 @@ button {
   width: 15px;
 }
 
-
-
 .show {
   color: #fff;
   background-color: #4ac0d5;
@@ -121,7 +125,6 @@ button {
   -webkit-animation-duration: .5s;
   animation-duration: .5s;
 }
-
 
 /* Keyboard */
 
