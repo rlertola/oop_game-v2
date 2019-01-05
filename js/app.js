@@ -32,6 +32,7 @@ document.addEventListener('keyup', (e) => {
   }
 })
 
+// Correct and incorrect keys are reset when a new game is started.
 const resetKeyboard = () => {
   const wrongKeys = document.getElementsByClassName('wrong');
   const chosenKeys = document.getElementsByClassName('chosen');
@@ -46,6 +47,7 @@ const resetKeyboard = () => {
   changeKeys(chosenKeys);
 }
 
+// Toggles enabling/disabling the keyboard. Takes a boolean; true is enable, false is disable. Uses so that user can't continue typing when the overlay screen is there, or after a game is won or lost.
 const toggleKeyboard = (enable) => {
   const keys = document.getElementsByClassName('key');
   [...keys].forEach((key) => {
@@ -53,6 +55,7 @@ const toggleKeyboard = (enable) => {
   })
 }
 
+// Used when the physical keyboard is used. The corresponding button on the screen is changed.
 const findMatchingButton = (letter) => {
   const keys = document.getElementsByClassName('key');
   let match;
