@@ -71,7 +71,6 @@ const Game = class {
 
   // Changes the heart image if an incorrect letter is guessed. Uses the number missed as the index of the hearts. Calls gameOver if 5 misses;
   removeLife(miss) {
-    const hearts = document.getElementsByTagName('img');
     hearts[miss].src = 'images/lostHeart.png';
     this.missed++;
     if (this.missed === 5) {
@@ -116,7 +115,6 @@ const Game = class {
 
   // Resets the lives when the game is started.
   resetHearts() {
-    const hearts = document.getElementsByTagName('img');
     [...hearts].forEach((heart) => {
       heart.src = 'images/liveHeart.png'
     })

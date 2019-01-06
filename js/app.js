@@ -7,6 +7,8 @@ const startButton = document.getElementById('btn__reset');
 const keyboard = document.getElementById('qwerty');
 const header = document.getElementById('header');
 const overlayTitle = document.getElementById('title');
+const keys = document.getElementsByClassName('key');
+const hearts = document.getElementsByTagName('img');
 
 // Hitting the start button hides the overlay and loads a new game with a new phrase.
 let game;
@@ -47,9 +49,8 @@ const resetKeyboard = () => {
   changeKeys(chosenKeys);
 }
 
-// Toggles enabling/disabling the keyboard. Takes a boolean; true is enable, false is disable. Uses so that user can't continue typing when the overlay screen is there, or after a game is won or lost.
+// Toggles enabling/disabling the keyboard. Takes a boolean; true is enable, false is disable. So user can't continue typing when the overlay screen is there, or after a game is won or lost.
 const toggleKeyboard = (enable) => {
-  const keys = document.getElementsByClassName('key');
   [...keys].forEach((key) => {
     key.disabled = !enable;
   })
@@ -57,7 +58,6 @@ const toggleKeyboard = (enable) => {
 
 // Used when the physical keyboard is used. The corresponding button on the screen is changed.
 const findMatchingButton = (letter) => {
-  const keys = document.getElementsByClassName('key');
   let match;
   [...keys].forEach((key) => {
     if (key.textContent === letter) {

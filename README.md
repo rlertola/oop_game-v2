@@ -13,6 +13,8 @@ Game.js is a class that contains all the props and functions for game play. It c
 
 The handleInteraction function is the most used as it uses the other functions and checks which keyboard was clicked, which button was clicked, if it is a match, shows that letter on the board if so, removes lives if not, and checks if the game is won or lost.
 
+The gameOver function has a 2.5 second delay before the overlay is displayed to give some time to view the board. The keyboards are deactivated during this time.
+
 Helper functions removeOldPhrase removes the phrase html from the screen after a game is won or lost, and resetHearts puts the lives back when a new game is started.
 
 ### Phrase.js
