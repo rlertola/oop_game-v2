@@ -1,4 +1,7 @@
 # OOP Treehouse FSJS Techdegree Project 4 - OOP Game App
+
+https://rlertola.github.io/oop_game-v2/
+
 This project was built using vanilla js.
 
 ### App.js
