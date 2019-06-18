@@ -1,5 +1,5 @@
 # OOP Treehouse FSJS Techdegree Project 4 - OOP Game App
-This project was built using vanilla js. Going for "exceeds expectations."
+This project was built using vanilla js.
 
 ### App.js
 App.js contains the listeners for the physical keyboard and the keyboard buttons on the screen.
